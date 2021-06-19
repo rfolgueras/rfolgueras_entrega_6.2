@@ -1,0 +1,252 @@
+body{
+    background-color: black;
+}
+#header{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 292px;
+    grid-template-areas: "header header header header";
+}
+#gamboa{
+    background-image: url("./gamboabanner.png");
+    background-size:cover;
+    height: 292px;
+    width: 100%;
+    margin-top: 0px;
+    grid-area: header;
+}
+#nav{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 70px;
+    grid-template-areas: "nav nav nav nav";
+}
+#display{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(44, 38, 29);
+    height: 70px;
+    width: 100%;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    grid-area: nav;
+    margin: 0%;
+}
+li{
+    list-style: none;
+}
+li:hover{
+    transform:scale(1.5,1.5);
+}
+a{
+    text-decoration: none;
+    color:rgb(211, 209, 209);
+    list-style: none;
+    font-size: 20px;
+}
+#About_US_Banner{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 90px;
+    grid-template-areas: "About_US_Banner About_US_Banner About_US_Banner About_US_Banner";
+}
+#Banner_About_Us{
+    font-size: large;
+    grid-area: About_US_Banner;
+    height: 60px;
+    margin-top: 10px;
+    background-image: linear-gradient(to right,rgb(211, 209, 209), rgb(126, 123, 123) );
+    color:rgb(44, 38, 29)(44, 38, 29);
+    text-align: center;
+    font-size: 40px;
+    padding-top: 4px;
+}
+#About_Us_Texto{
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-rows: 120px;
+    grid-template-areas: "About_Us_Texto";
+
+}
+#Texto_About_Us{
+    font-size: 20px;
+    background-color:rgb(44, 38, 29);
+    color:rgb(211, 209, 209);
+    grid-area:About_Us_Texto;
+}
+#Main_Image_About_Us{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 984px;
+    grid-template-areas: "Imagen_ALM Imagen_PHM";
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.336);
+}
+#Imagen_ALM{
+    grid-area: Imagen_ALM;
+    color: white;
+}
+#Imagen_PHM{
+grid-area: Imagen_PHM;
+color: white;
+}
+#ALM_Parrafo_1{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 725px;
+    grid-template-areas: "ALM_Parrafo_1 ALM_Image_1";
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+#Parrafo_ALM_1{
+    grid-area: ALM_Parrafo_1;
+    height: 100%;
+    background-color: rgb(44, 38, 29);;
+    color:rgb(211, 209, 209);
+    text-align: center;
+    font-size: 30px; 
+    text-align: center;   
+}
+#ALM_Image_1{
+    background-image: url("./About_Us_Image.jpg");
+    background-size:cover;
+    height: 725px;
+    width: 100%;
+    grid-area: ALM_Image_1;
+}
+#ALM_Banner{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 90px;
+    grid-template-areas: "ALM_Banner";
+}
+#Banner_ALM{
+    font-size: large;
+    grid-area: ALM_Banner;
+    height: 60px;
+    margin-top: 10px;
+    background-image: linear-gradient(to right,rgb(211, 209, 209), rgb(126, 123, 123) );
+    color:rgb(44, 38, 29)(44, 38, 29);
+    text-align: center;
+    font-size: 40px;
+    padding-top: 4px;
+}
+#ALM_Parrafo_2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 725px;
+    grid-template-areas: "ALM_Image_2 ALM_Parrafo_2";
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+#ALM_Image_2{
+    grid-area: ALM_Image_2;
+    color: rgb(211, 209, 209);
+}
+#Parrado_ALM_2{
+    grid-area: ALM_Parrafo_2;
+    height: 100%;
+    background-color: rgb(44, 38, 29);;
+    color:rgb(211, 209, 209);
+    text-align: center;
+    font-size: 30px; 
+    text-align: center;  
+}
+#PHM_Banner{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 90px;
+    grid-template-areas: "PHM_Banner";
+}
+#Banner_PHM{
+    font-size: large;
+    grid-area: PHM_Banner;
+    height: 60px;
+    margin-top: 10px;
+    background-image: linear-gradient(to right,rgb(211, 209, 209), rgb(126, 123, 123) );
+    color:rgb(44, 38, 29)(44, 38, 29);
+    text-align: center;
+    font-size: 40px;
+    padding-top: 4px;
+}
+#PHM_Parrafo_1{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 725px;
+    grid-template-areas: "PHM_Parrafo_1 PHM_Image_1";
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+#Parrafo_PHM_1{
+    grid-area: PHM_Parrafo_1;
+    height: 100%;
+    background-color: rgb(44, 38, 29);;
+    color:rgb(211, 209, 209);
+    text-align: center;
+    font-size: 30px; 
+    text-align: center;  
+
+}
+#PHM_Image_1{
+    grid-area: PHM_Image_1;
+    color: rgb(211, 209, 209);
+}
+#PHM_Parrafo_2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 725px;
+    grid-template-areas: "PHM_Image_2 PHM_Parrafo_2";
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+#Parrado_PHM_2{
+    grid-area:PHM_Parrafo_2;
+    height: 100%;
+    background-color: rgb(44, 38, 29);;
+    color:rgb(211, 209, 209);
+    text-align: center;
+    font-size: 30px; 
+    text-align: center;  
+}
+#PHM_Image_2{
+    grid-area: PHM_Image_2;
+    color: rgb(211, 209, 209);
+}
+#Values_Banner{ 
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 90px;
+    grid-template-areas: "Values_Banner";
+
+}
+
+#Banner_Values{
+    font-size: large;
+    grid-area: Values_Banner;
+    height: 60px;
+    margin-top: 10px;
+    background-image: linear-gradient(to right,rgb(211, 209, 209), rgb(126, 123, 123) );
+    color:rgb(44, 38, 29)(44, 38, 29);
+    text-align: center;
+    font-size: 40px;
+    padding-top: 4px;
+}
+#Our_Values_Image{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 600px;
+    grid-template-areas: "'Our_Values";
+    justify-content: center;
+    text-align: center;
+}
+#Image_Our_Values{
+    color:rgb(211, 209, 209);
+    background-color:rgb(44, 38, 29);
+
+}
